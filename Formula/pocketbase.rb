@@ -11,7 +11,7 @@ class Pocketbase < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pockethost/pocketbase/releases/download/v0.0.1/pocketbase_0.0.1_darwin_amd64.zip"
-      sha256 "dacd93ba1dfe38f8f4bd13a05d4db01e3f79b1a97578108dd07a4df01a4ea1a0"
+      sha256 "2a39c14656a9634e1d40fe09cde62a63eef901d48311548960186a3421212878"
 
       define_method(:install) do
         bin.install "pocketbase"
@@ -19,7 +19,7 @@ class Pocketbase < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pockethost/pocketbase/releases/download/v0.0.1/pocketbase_0.0.1_darwin_arm64.zip"
-      sha256 "b1edd5674596161431ef45f5a66e1983cfd94da36227b7d841b73fbf9c499c00"
+      sha256 "f52644523ef99d9b3c7bcdc7bfdb6f9fd0472f525a4d83ecb701c77826b42185"
 
       define_method(:install) do
         bin.install "pocketbase"
@@ -30,14 +30,14 @@ class Pocketbase < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pockethost/pocketbase/releases/download/v0.0.1/pocketbase_0.0.1_linux_amd64.zip"
-      sha256 "339d6c84a59d3f4e3490359b96452e0ad99322e6e2bcb6eb9a11e5fc8a61a419"
+      sha256 "6569aeee2d84bd4114122bffafddce2fcadea2c844eb8417fff3ec7b4304df91"
       define_method(:install) do
         bin.install "pocketbase"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pockethost/pocketbase/releases/download/v0.0.1/pocketbase_0.0.1_linux_arm64.zip"
-      sha256 "05e590ce0980c10cf12ae1fa781040af7e3ee60bf815bb76d0c4b887ba8a1a8e"
+      sha256 "6bc5bc423e292f3c705a1c3bd564c76cfbc1d094f04d0ab2638f40b7a818cf5a"
       define_method(:install) do
         bin.install "pocketbase"
       end
