@@ -5,21 +5,21 @@
 class Pocketone < Formula
   desc "PocketOne, a community fork of PocketBase with extensions (pages, pocker and more)"
   homepage "https://github.com/pockethost/pocketone"
-  version "0.0.1-alpha.6"
+  version "0.0.1-alpha.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.6/pocketone_0.0.1-alpha.6_darwin_amd64.zip"
-      sha256 "6de80f751a833e69979fbb3c183134a258e09836742fc5c16b2b71b92c7b0dc1"
+      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.7/pocketone_0.0.1-alpha.7_darwin_amd64.zip"
+      sha256 "66bda28cf08576217a947e3dcbf73d66c3f2333f7a89d84dfdcfeb060bbb43b5"
 
       define_method(:install) do
         bin.install "pocketone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.6/pocketone_0.0.1-alpha.6_darwin_arm64.zip"
-      sha256 "d0841bda8ee56685d18332928bb5f39182086bfd8ccb3e4191a4c5bb5f1a078a"
+      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.7/pocketone_0.0.1-alpha.7_darwin_arm64.zip"
+      sha256 "7f21a4d1823fbdd1f29be6e5823575c53cf0f4ba6d0c226dbe691f106c558ba5"
 
       define_method(:install) do
         bin.install "pocketone"
@@ -29,15 +29,15 @@ class Pocketone < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.6/pocketone_0.0.1-alpha.6_linux_amd64.zip"
-      sha256 "f5a520884ac5323db3e5a800af508654ce69cc4db21e7c0fad2a67cd158fcd6d"
+      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.7/pocketone_0.0.1-alpha.7_linux_amd64.zip"
+      sha256 "628a9512009cdf8466cb5947addff458fcfdb397a8045ed13ce83bed9e579cd8"
       define_method(:install) do
         bin.install "pocketone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.6/pocketone_0.0.1-alpha.6_linux_arm64.zip"
-      sha256 "3dec806864233313fa4c0a5e261cab1b1f31ba15c717a6e1d9655f1ed63205fd"
+      url "https://github.com/pockethost/pocketone/releases/download/v0.0.1-alpha.7/pocketone_0.0.1-alpha.7_linux_arm64.zip"
+      sha256 "40f85694276cdd69872de651b019a5822b75b36266e9dc540511cd850e8a8f0a"
       define_method(:install) do
         bin.install "pocketone"
       end
