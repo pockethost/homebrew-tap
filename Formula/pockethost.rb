@@ -11,7 +11,7 @@ class Pockethost < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.8/pockethost_5.0.0-alpha.8_darwin_amd64.zip"
-      sha256 "7930809c6f8be20ca21e0b953392628a56d7430051bfb96226cbe1c66210ade0"
+      sha256 "b6478849d5f2df6523f1dc7ee1e4def000e5a523773f93db2ad996b8abf08208"
 
       define_method(:install) do
         bin.install "pockethost"
@@ -19,7 +19,7 @@ class Pockethost < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.8/pockethost_5.0.0-alpha.8_darwin_arm64.zip"
-      sha256 "e378b809cc80c698fe0a63ce1c228b50c45c6287344fb2d7652361994b6ad829"
+      sha256 "aa1116a80de16c47c04cacfe3bae8b4e5bc2be9fd0b40c9c31d8f4446f773a17"
 
       define_method(:install) do
         bin.install "pockethost"
@@ -30,14 +30,14 @@ class Pockethost < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.8/pockethost_5.0.0-alpha.8_linux_amd64.zip"
-      sha256 "7b4d88969ae44c84f9991379c6d808dc03fb0499e336487478f2f65f4f7f826b"
+      sha256 "8ce7ab20d00c396956a477431a1b93f111ec69760619b685aba7740530e30de4"
       define_method(:install) do
         bin.install "pockethost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.8/pockethost_5.0.0-alpha.8_linux_arm64.zip"
-      sha256 "f2aa877fb92414daaacbcf80964ed3afc0683b9f5cbbdb4b23b01c7ceae35399"
+      sha256 "992d17fa9d5dad5e40595743a2d3b5bc22b81b0586ec8118c862bee9446fc9a0"
       define_method(:install) do
         bin.install "pockethost"
       end
