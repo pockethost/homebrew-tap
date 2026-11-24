@@ -5,21 +5,21 @@
 class Pockethost < Formula
   desc "PocketHost, PocketBase hosting, built on PocketOne"
   homepage "https://pockethost.io"
-  version "5.0.0-alpha.10"
+  version "5.0.0-alpha.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.10/pockethost_5.0.0-alpha.10_darwin_amd64.zip"
-      sha256 "b5c7e9e51f1c23543f17283ab3b3908c3a12c390711954dc5fa5d4f981ceb92d"
+      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.11/pockethost_5.0.0-alpha.11_darwin_amd64.zip"
+      sha256 "a99f4678263d2b1365556dd975123d5ae35834084a74b02c9b004f53c185fa89"
 
       define_method(:install) do
         bin.install "pockethost"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.10/pockethost_5.0.0-alpha.10_darwin_arm64.zip"
-      sha256 "6b258b8c40f06fe2ca823a791744aeb7b52fcaccbd95abc306a0361343b2a2f4"
+      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.11/pockethost_5.0.0-alpha.11_darwin_arm64.zip"
+      sha256 "93a6e7e2dc1a3a3afd7e5acc0c1303bfbdea427c33e4584732ec96b26c34596a"
 
       define_method(:install) do
         bin.install "pockethost"
@@ -29,15 +29,15 @@ class Pockethost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.10/pockethost_5.0.0-alpha.10_linux_amd64.zip"
-      sha256 "64b4d92a2d037dfc60b661f3688b2275bb18364e2f781ca9ae91db9cc102cc7d"
+      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.11/pockethost_5.0.0-alpha.11_linux_amd64.zip"
+      sha256 "4553dc684c9852b1e6c9f555278d00daee44a368a207f884441ab64a2cf6dae3"
       define_method(:install) do
         bin.install "pockethost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.10/pockethost_5.0.0-alpha.10_linux_arm64.zip"
-      sha256 "3c989a53f9422ac1336a6551e809bc7e8ee4c5fa9eed606d13a5858bd6b0909a"
+      url "https://github.com/pockethost/pockethost/releases/download/v5.0.0-alpha.11/pockethost_5.0.0-alpha.11_linux_arm64.zip"
+      sha256 "7c39b3a57fbd96bf7d4e5ca1a2985fa00a376d4c08b4e05b84f9c9e38ed669ef"
       define_method(:install) do
         bin.install "pockethost"
       end
